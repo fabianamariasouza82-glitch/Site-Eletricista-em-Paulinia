@@ -177,6 +177,19 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Google Reviews Section */}
+      <section className="py-16 bg-white">
+        <div className="container">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold text-foreground">O que nossos clientes dizem</h2>
+          </div>
+          {/* Trustindex Widget */}
+          <div className="trustindex-widget-container min-h-[150px]">
+            <div className="ti-widget" data-widget-id="f378aac752669833cc56d5358ec"></div>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section id="servicos" className="py-20 scroll-mt-28">
         <div className="container">
