@@ -130,7 +130,7 @@ export default function Home() {
           backgroundPosition: 'center 5%'
         }}
       >
-        <div className="container relative py-32 md:py-48">
+        <div className="container relative py-32 md:pt-64 md:pb-32">
           <div className="max-w-3xl">
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
               Eletricista Profissional em Campinas
