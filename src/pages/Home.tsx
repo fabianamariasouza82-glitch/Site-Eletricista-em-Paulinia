@@ -123,14 +123,14 @@ export default function Home() {
 
       {/* Hero Section v3.1 - 90% Screen Height */}
       <section 
-        className="relative overflow-hidden min-h-[550px] md:min-h-[90vh] flex items-center bg-blue-950 bg-cover bg-center"
+        className="relative overflow-hidden h-[550px] md:h-[90vh] flex items-center bg-blue-950 bg-cover bg-center"
         style={{ 
           backgroundImage: 'linear-gradient(to right, rgba(2, 6, 23, 0.95) 0%, rgba(2, 6, 23, 0.4) 50%, transparent 100%), url("/manus-storage/hero_eletricista_8af14beb.jpg")',
           backgroundSize: 'cover',
           backgroundPosition: 'center 5%'
         }}
       >
-        <div className="container relative py-32 md:pt-64 md:pb-32">
+        <div className="container relative pt-20 md:pt-40">
           <div className="max-w-3xl">
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
               Eletricista Profissional em Campinas
