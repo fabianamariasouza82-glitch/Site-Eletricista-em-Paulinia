@@ -132,23 +132,23 @@ export default function Home() {
       >
         <div className="w-full px-8 md:px-24 relative pt-20 md:pt-40">
           <div className="max-w-3xl">
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-6xl md:text-8xl font-bold text-white mb-8 leading-[1.1]">
               Eletricista Profissional em Campinas
             </h1>
-            <p className="text-xl md:text-2xl text-blue-50 mb-10 max-w-2xl leading-relaxed">
+            <p className="text-2xl md:text-3xl text-blue-50 mb-12 max-w-3xl leading-relaxed">
               Mais de 20 anos de experiência. Atendimento 24 horas para residências, comércios e condomínios. Certificado NR10 e NR35.
             </p>
             <div className="flex flex-col sm:flex-row gap-6">
               <a 
                 href="https://api.whatsapp.com/send/?phone=5519994252525&text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento."
-                className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-accent text-accent-foreground rounded-xl text-lg font-bold hover:opacity-90 transition-all hover:scale-105 shadow-lg"
+                className="inline-flex items-center justify-center gap-4 px-12 py-6 bg-accent text-accent-foreground rounded-2xl text-xl font-black hover:opacity-90 transition-all hover:scale-105 shadow-2xl"
               >
-                <Phone className="w-6 h-6" />
+                <Phone className="w-7 h-7" />
                 Solicitar Orçamento
               </a>
               <a 
                 href="#servicos"
-                className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-white/10 text-white rounded-xl text-lg font-bold hover:bg-white/20 transition-all border border-white/30 backdrop-blur-sm"
+                className="inline-flex items-center justify-center gap-4 px-12 py-6 bg-white/10 text-white rounded-2xl text-xl font-black hover:bg-white/20 transition-all border border-white/40 backdrop-blur-md"
               >
                 Ver Serviços
               </a>
@@ -159,8 +159,8 @@ export default function Home() {
 
       {/* Benefits Section */}
       <section className="py-24 bg-blue-50 w-full">
-        <div className="w-full px-8 md:px-24">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="w-full px-8 md:px-32 max-w-[1600px] mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
             {benefits.map((benefit, idx) => {
               const Icon = benefit.icon;
               return (
@@ -179,17 +179,17 @@ export default function Home() {
 
 
       {/* Services Section */}
-      <section id="servicos" className="py-24 scroll-mt-28 w-full">
-        <div className="w-full px-8 md:px-24">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+      <section id="servicos" className="py-32 scroll-mt-28 w-full">
+        <div className="w-full px-8 md:px-32 max-w-[1600px] mx-auto">
+          <div className="text-center mb-20">
+            <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
               Nossos Serviços
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-2xl text-muted-foreground max-w-4xl mx-auto">
               Oferecemos soluções completas para todas as suas necessidades elétricas em Campinas
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {services.map((service, idx) => {
               const Icon = service.icon;
               return (
@@ -448,7 +448,7 @@ export default function Home() {
               <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
               Avalie-nos no Google
             </a>
-            <p>&copy; 2026 Eletricista em Campinas. Todos os direitos reservados. | Versão 3.5</p>
+            <p>&copy; 2026 Eletricista em Campinas. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>
