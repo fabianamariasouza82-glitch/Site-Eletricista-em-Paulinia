@@ -79,7 +79,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-white w-full overflow-x-hidden">
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border shadow-sm">
         <div className="container flex items-center justify-between h-28">
@@ -158,9 +158,9 @@ export default function Home() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-16 bg-blue-50">
-        <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+      <section className="py-16 bg-blue-50 w-full">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {benefits.map((benefit, idx) => {
               const Icon = benefit.icon;
               return (
@@ -179,8 +179,8 @@ export default function Home() {
 
 
       {/* Services Section */}
-      <section id="servicos" className="py-20 scroll-mt-28">
-        <div className="container">
+      <section id="servicos" className="py-20 scroll-mt-28 w-full">
+        <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">
               Nossos Serviços
@@ -215,8 +215,8 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="sobre" className="py-20 bg-blue-50 scroll-mt-28">
-        <div className="container">
+      <section id="sobre" className="py-20 bg-blue-50 scroll-mt-28 w-full">
+        <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -264,8 +264,8 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section id="contato" className="py-20 bg-gradient-to-r from-blue-900 to-blue-800 scroll-mt-28">
-        <div className="container text-center">
+      <section id="contato" className="py-20 bg-gradient-to-r from-blue-900 to-blue-800 scroll-mt-28 w-full">
+        <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Precisa de um Eletricista Agora?
           </h2>
@@ -292,8 +292,8 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-blue-50">
-        <div className="container max-w-3xl">
+      <section className="py-20 bg-blue-50 w-full">
+        <div className="container mx-auto px-4 max-w-4xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">
               Perguntas Frequentes
