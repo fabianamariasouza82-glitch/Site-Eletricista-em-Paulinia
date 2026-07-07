@@ -10,7 +10,7 @@ export default function TrustindexWidget() {
     if (containerRef.current.querySelector("script")) return;
 
     const script = document.createElement("script");
-    script.src = "https://cdn.trustindex.io/loader.js?f378aac752669833cc56d5358ec";
+    script.src = "https://cdn.trustindex.io/loader.js?967f1ad769cd08893386c736c28";
     script.defer = true;
     script.async = true;
     containerRef.current.appendChild(script);
