@@ -158,9 +158,9 @@ export default function Home() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-16 bg-blue-50 w-full">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <section className="py-20 bg-blue-50 w-full">
+        <div className="container mx-auto px-4 max-w-[1400px]">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {benefits.map((benefit, idx) => {
               const Icon = benefit.icon;
               return (
@@ -179,26 +179,26 @@ export default function Home() {
 
 
       {/* Services Section */}
-      <section id="servicos" className="py-20 scroll-mt-28 w-full">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">
+      <section id="servicos" className="py-24 scroll-mt-28 w-full">
+        <div className="container mx-auto px-4 max-w-[1400px]">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
               Nossos Serviços
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Oferecemos soluções completas para todas as suas necessidades elétricas
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Oferecemos soluções completas para todas as suas necessidades elétricas em Campinas
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {services.map((service, idx) => {
               const Icon = service.icon;
               return (
-                <Card key={idx} className="p-6 hover:shadow-lg transition-shadow border-0">
-                  <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
-                    <Icon className="w-6 h-6 text-accent" />
+                <Card key={idx} className="p-8 hover:shadow-xl transition-all border-0 bg-white shadow-md">
+                  <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center mb-6">
+                    <Icon className="w-7 h-7 text-accent" />
                   </div>
-                  <h3 className="text-xl font-bold text-foreground mb-2">{service.title}</h3>
-                  <p className="text-muted-foreground mb-4">{service.description}</p>
+                  <h3 className="text-2xl font-bold text-foreground mb-3">{service.title}</h3>
+                  <p className="text-lg text-muted-foreground mb-6">{service.description}</p>
                   <Link href="/servicos" className="text-accent font-medium hover:text-accent/80 transition-colors">
                     Saiba mais →
                   </Link>
@@ -215,9 +215,9 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="sobre" className="py-20 bg-blue-50 scroll-mt-28 w-full">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <section id="sobre" className="py-24 bg-blue-50 scroll-mt-28 w-full">
+        <div className="container mx-auto px-4 max-w-[1400px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
                 Quem Somos
