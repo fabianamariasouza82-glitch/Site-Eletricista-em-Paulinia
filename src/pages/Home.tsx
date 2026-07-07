@@ -404,12 +404,23 @@ export default function Home() {
           <div className="border-t border-blue-800 pt-8 flex flex-col items-center gap-6 text-center text-blue-200 text-sm">
             <div className="w-full max-w-4xl mx-auto">
               <h3 className="text-xl font-bold text-white mb-6">O que nossos clientes dizem</h3>
-              <div className="trustindex-widget-container min-h-[120px] mb-4 overflow-hidden relative">
-                <style dangerouslySetInnerHTML={{ __html: `
-                  .ti-widget.ti-goog { position: relative !important; bottom: auto !important; left: auto !important; right: auto !important; margin: 0 auto !important; }
-                  .ti-free-sticky { display: none !important; }
-                ` }} />
-                <div className="ti-widget" data-widget-id="f378aac752669833cc56d5358ec"></div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+                {[
+                  { name: "Edilson Fernando Silva", text: "Pronto atendimento; educação e atenção com o cliente. Serviço Recomendado!", stars: 5 },
+                  { name: "Eliana Fonseca", text: "Serviço super rápido e eficiente. Parabéns!", stars: 5 },
+                  { name: "Débora Tasso", text: "Profissionais capacitados e cuidadosos, muito gente fina. Fizeram toda a adequação elétrica da minha casa e...", stars: 5 },
+                  { name: "Flavio Souza", text: "Parabéns ao time de excelentes profissionais, que oferecem produtos e serviços de qualidade. Uma empresa que trata com...", stars: 5 }
+                ].map((review, i) => (
+                  <div key={i} className="bg-white p-4 rounded-xl text-left shadow-sm">
+                    <div className="flex gap-1 mb-2">
+                      {[...Array(review.stars)].map((_, i) => (
+                        <Star key={i} className="w-3 h-3 fill-yellow-400 text-yellow-400" />
+                      ))}
+                    </div>
+                    <p className="text-blue-950 text-xs font-bold mb-1">{review.name}</p>
+                    <p className="text-blue-900/70 text-[11px] leading-tight line-clamp-3 italic">"{review.text}"</p>
+                  </div>
+                ))}
               </div>
             </div>
             <a
