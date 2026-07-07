@@ -406,19 +406,31 @@ export default function Home() {
               <h3 className="text-xl font-bold text-white mb-6">O que nossos clientes dizem</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
                 {[
-                  { name: "Edilson Fernando Silva", text: "Pronto atendimento; educação e atenção com o cliente. Serviço Recomendado!", stars: 5 },
-                  { name: "Eliana Fonseca", text: "Serviço super rápido e eficiente. Parabéns!", stars: 5 },
-                  { name: "Débora Tasso", text: "Profissionais capacitados e cuidadosos, muito gente fina. Fizeram toda a adequação elétrica da minha casa e...", stars: 5 },
-                  { name: "Flavio Souza", text: "Parabéns ao time de excelentes profissionais, que oferecem produtos e serviços de qualidade. Uma empresa que trata com...", stars: 5 }
+                  { name: "Edilson Fernando Silva", text: "Pronto atendimento; educação e atenção com o cliente. Serviço Recomendado!", stars: 5, date: "1 semana atrás" },
+                  { name: "Eliana Fonseca", text: "Serviço super rápido e eficiente. Parabéns!", stars: 5, date: "3 semanas atrás" },
+                  { name: "Débora Tasso", text: "Profissionais capacitados e cuidadosos, muito gente fina. Fizeram toda a adequação elétrica da minha casa e...", stars: 5, date: "3 semanas atrás" },
+                  { name: "Flavio Souza", text: "Parabéns ao time de excelentes profissionais, que oferecem produtos e serviços de qualidade. Uma empresa que trata com...", stars: 5, date: "3 semanas atrás" }
                 ].map((review, i) => (
-                  <div key={i} className="bg-white p-4 rounded-xl text-left shadow-sm">
-                    <div className="flex gap-1 mb-2">
+                  <div key={i} className="bg-white p-5 rounded-xl text-left shadow-md border border-gray-100 relative">
+                    <div className="flex justify-between items-start mb-3">
+                      <div className="flex flex-col">
+                        <span className="text-blue-950 text-sm font-bold flex items-center gap-1">
+                          {review.name}
+                          <svg className="w-3 h-3 text-blue-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                        </span>
+                        <span className="text-gray-400 text-[10px]">{review.date}</span>
+                      </div>
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_Logo.svg" alt="Google" className="w-4 h-4" />
+                    </div>
+                    <div className="flex gap-0.5 mb-3">
                       {[...Array(review.stars)].map((_, i) => (
                         <Star key={i} className="w-3 h-3 fill-yellow-400 text-yellow-400" />
                       ))}
                     </div>
-                    <p className="text-blue-950 text-xs font-bold mb-1">{review.name}</p>
-                    <p className="text-blue-900/70 text-[11px] leading-tight line-clamp-3 italic">"{review.text}"</p>
+                    <p className="text-gray-700 text-xs leading-relaxed line-clamp-4 italic">"{review.text}"</p>
+                    <div className="mt-3 pt-3 border-t border-gray-50 flex items-center justify-between">
+                      <span className="text-[9px] font-bold text-blue-600 uppercase tracking-wider">Avaliação Verificada</span>
+                    </div>
                   </div>
                 ))}
               </div>
