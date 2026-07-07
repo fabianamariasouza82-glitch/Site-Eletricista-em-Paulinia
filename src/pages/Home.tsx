@@ -121,16 +121,16 @@ export default function Home() {
         )}
       </header>
 
-      {/* Hero Section v3.1 - 90% Screen Height */}
+      {/* Hero Section v3.5 - Forced Layout */}
       <section 
-        className="relative overflow-hidden h-[550px] md:h-[90vh] flex items-center bg-blue-950 bg-cover bg-center"
+        className="relative overflow-hidden h-[600px] md:h-[90vh] w-full flex items-center bg-blue-950 bg-cover bg-center"
         style={{ 
           backgroundImage: 'linear-gradient(to right, rgba(2, 6, 23, 0.95) 0%, rgba(2, 6, 23, 0.4) 50%, transparent 100%), url("/manus-storage/hero_eletricista_8af14beb.jpg")',
           backgroundSize: 'cover',
           backgroundPosition: 'center 5%'
         }}
       >
-        <div className="container relative pt-20 md:pt-40">
+        <div className="w-full px-8 md:px-24 relative pt-20 md:pt-40">
           <div className="max-w-3xl">
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
               Eletricista Profissional em Campinas
@@ -158,8 +158,8 @@ export default function Home() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-blue-50 w-full">
-        <div className="container mx-auto px-4 max-w-[1400px]">
+      <section className="py-24 bg-blue-50 w-full">
+        <div className="w-full px-8 md:px-24">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {benefits.map((benefit, idx) => {
               const Icon = benefit.icon;
@@ -180,7 +180,7 @@ export default function Home() {
 
       {/* Services Section */}
       <section id="servicos" className="py-24 scroll-mt-28 w-full">
-        <div className="container mx-auto px-4 max-w-[1400px]">
+        <div className="w-full px-8 md:px-24">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
               Nossos Serviços
@@ -448,7 +448,7 @@ export default function Home() {
               <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
               Avalie-nos no Google
             </a>
-            <p>&copy; 2026 Eletricista em Campinas. Todos os direitos reservados.</p>
+            <p>&copy; 2026 Eletricista em Campinas. Todos os direitos reservados. | Versão 3.5</p>
           </div>
         </div>
       </footer>
