@@ -83,12 +83,12 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border shadow-sm">
-        <div className="container flex items-center justify-between h-28">
+        <div className="container flex items-center justify-between h-32">
           <div className="flex items-center gap-2">
             <img 
               src="/manus-storage/logo_eletricista_280fb94a.png" 
               alt="Eletricista em Campinas" 
-              className="h-20 w-auto"
+              className="h-24 w-auto"
             />
           </div>
           <nav className="hidden md:flex items-center gap-8">
