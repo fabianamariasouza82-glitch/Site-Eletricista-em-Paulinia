@@ -224,3 +224,12 @@
     margin: 0 !important;
   }
 }
+
+/* Centraliza o widget de avaliações do Trustindex.
+   O trilho que segura os cartões (.ti-reviews-container-wrapper) alinha
+   à esquerda por padrão, mesmo quando todos os cartões cabem na tela. */
+.ti-reviews-container-wrapper {
+  display: flex !important;
+  justify-content: center !important;
+  flex-wrap: wrap !important;
+}
