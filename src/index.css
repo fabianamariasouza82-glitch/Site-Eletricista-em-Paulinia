@@ -213,4 +213,13 @@
       font-size: 21px;
     }
   }
+
+  /* Proteção: garante que a página sempre ocupe a largura total da tela,
+     mesmo se algum script de terceiros (como o widget de avaliações)
+     tentar aplicar um limite de largura ou centralização por conta própria. */
+  html, body, #root {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+  }
 }
