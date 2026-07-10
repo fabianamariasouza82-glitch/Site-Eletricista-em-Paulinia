@@ -8,8 +8,8 @@ export default function Blog() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useSEO({
-    title: "Blog de Eletricidade - Dicas e Informações | Eletricista em Campinas",
-    description: "Dicas, tutoriais e informações sobre problemas elétricos comuns e como resolvê-los. Artigos escritos por eletricistas certificados em Campinas.",
+    title: "Blog de Eletricidade - Dicas e Informações | Eletricista em Paulínia",
+    description: "Dicas, tutoriais e informações sobre problemas elétricos comuns e como resolvê-los. Artigos escritos por eletricistas certificados atendendo Paulínia.",
   });
 
   return (
@@ -20,7 +20,7 @@ export default function Blog() {
           <a href="/" className="flex items-center gap-2">
             <img 
               src="/manus-storage/logo_eletricista_280fb94a.png" 
-              alt="Eletricista em Campinas" 
+              alt="Eletricista em Paulínia" 
               className="h-24 w-auto"
             />
           </a>
@@ -122,7 +122,7 @@ export default function Blog() {
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
-              <h3 className="font-bold mb-4">Eletricista em Campinas</h3>
+              <h3 className="font-bold mb-4">Eletricista em Paulínia</h3>
               <p className="text-blue-200 text-sm">Serviços elétricos profissionais com mais de 20 anos de experiência.</p>
             </div>
             <div>
@@ -134,7 +134,7 @@ export default function Blog() {
             </div>
             <div>
               <h4 className="font-semibold mb-3">Localização</h4>
-              <p className="text-blue-200 text-sm">Campinas, SP</p>
+              <p className="text-blue-200 text-sm">Paulínia, SP</p>
               <p className="text-blue-200 text-sm">Atendemos toda a região</p>
             </div>
             <div>
@@ -153,7 +153,7 @@ export default function Blog() {
               <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
               Avalie-nos no Google
             </a>
-            <p>&copy; 2026 Eletricista em Campinas. Todos os direitos reservados.</p>
+            <p>&copy; 2026 Eletricista em Paulínia. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>
