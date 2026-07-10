@@ -9,21 +9,21 @@ export default function Neighborhood() {
   
   const neighborhood = neighborhoods.find(n => n.id === params?.id);
 
-  // Gera um parágrafo extra com foco no tipo de região (residencial, comercial, universitária, industrial, condomínio)
+  // Gera um parágrafo extra com foco no tipo de região (residencial, comercial, industrial, condomínio)
   // para diferenciar de verdade o conteúdo de cada página de bairro, evitando texto duplicado.
   const getSpecialtyText = (description: string, name: string) => {
     const d = description.toLowerCase();
-    if (d.includes("universitária") || d.includes("apartamentos") || d.includes("estudantes")) {
-      return `Em ${name}, atendemos muito kitnets, apartamentos e repúblicas estudantis — sabemos lidar com instalações elétricas de prédios, quadros de distribuição compartilhados e a urgência de quem precisa resolver o problema rápido para voltar aos estudos ou ao trabalho.`;
+    if (d.includes("industrial") || d.includes("indústrias") || d.includes("empresarial")) {
+      return `Em ${name}, temos experiência com instalações elétricas de maior porte: quadros de força, manutenção preventiva de painéis elétricos e adequação às normas de segurança do trabalho exigidas em ambientes comerciais e empresariais próximos à região industrial de Paulínia.`;
     }
-    if (d.includes("industrial") || d.includes("indústrias")) {
-      return `Em ${name}, temos experiência com instalações elétricas de maior porte: quadros de força industriais, manutenção preventiva de painéis elétricos e adequação às normas de segurança do trabalho exigidas em ambientes comerciais e industriais.`;
-    }
-    if (d.includes("comercial") || d.includes("comércios") || d.includes("estabelecimentos")) {
+    if (d.includes("comercial") || d.includes("comércios") || d.includes("estabelecimentos") || d.includes("avenida")) {
       return `Em ${name}, atendemos lojas, escritórios e estabelecimentos comerciais com agilidade — sabemos que parar o funcionamento do seu negócio por um problema elétrico custa caro, por isso priorizamos atendimentos comerciais na região.`;
     }
-    if (d.includes("condomínio") || d.includes("condomínios")) {
-      return `Em ${name}, temos experiência atendendo condomínios — desde a manutenção elétrica de áreas comuns até instalações dentro das unidades, sempre seguindo as normas de segurança exigidas em edificações coletivas.`;
+    if (d.includes("condomínio") || d.includes("nobre") || d.includes("alto padrão") || d.includes("urbanismo")) {
+      return `Em ${name}, temos experiência atendendo condomínios e residências de alto padrão — desde a manutenção elétrica de áreas comuns até instalações dentro das unidades, sempre seguindo as normas de segurança exigidas.`;
+    }
+    if (d.includes("expansão") || d.includes("crescimento") || d.includes("reurbanização")) {
+      return `Em ${name}, uma região em expansão, ajudamos tanto moradores de imóveis novos (que precisam de instalações elétricas adicionais) quanto de casas mais antigas que precisam de modernização de quadros e fiação.`;
     }
     return `Em ${name}, atendemos residências de todos os portes — de reparos simples como troca de tomadas e chuveiros a reformas elétricas completas, sempre com atendimento rápido para quem mora na região.`;
   };
@@ -32,17 +32,17 @@ export default function Neighborhood() {
 
   useSEO({
     title: neighborhood
-      ? `Eletricista no ${neighborhood.name} - Campinas | Atendimento 24 Horas`
-      : "Eletricista em Campinas",
+      ? `Eletricista no ${neighborhood.name} - Paulínia | Atendimento 24 Horas`
+      : "Eletricista em Paulínia",
     description: neighborhood
-      ? `Precisa de um eletricista no ${neighborhood.name}, Campinas? Atendimento rápido, certificado NR10 e NR35, 24 horas. ${neighborhood.description}`
-      : "Eletricista profissional em Campinas.",
+      ? `Precisa de um eletricista no ${neighborhood.name}, Paulínia? Atendimento rápido, certificado NR10 e NR35, 24 horas. ${neighborhood.description}`
+      : "Eletricista profissional em Paulínia.",
     jsonLd: neighborhood ? {
       "@context": "https://schema.org",
       "@type": "Electrician",
-      "name": `Eletricista em Campinas - Atendimento no ${neighborhood.name}`,
-      "image": "https://eletricistaemcampinas.com.br/manus-storage/hero_eletricista_8af14beb.jpg",
-      "url": `https://eletricistaemcampinas.com.br/bairro/${neighborhood.id}`,
+      "name": `Eletricista em Paulínia - Atendimento no ${neighborhood.name}`,
+      "image": "https://eletricistaempaulinia.com.br/manus-storage/hero_eletricista_8af14beb.jpg",
+      "url": `https://eletricistaempaulinia.com.br/bairro/${neighborhood.id}`,
       "telephone": "+5519994252525",
       "priceRange": "$$",
       "address": {
@@ -51,7 +51,7 @@ export default function Neighborhood() {
         "addressRegion": "SP",
         "addressCountry": "BR",
       },
-      "hasMap": `https://www.google.com/maps/search/eletricista+${encodeURIComponent(neighborhood.name)}+campinas`,
+      "hasMap": `https://www.google.com/maps/search/eletricista+${encodeURIComponent(neighborhood.name)}+paulinia`,
       "areaServed": {
         "@type": "AdministrativeArea",
         "name": neighborhood.name,
@@ -70,7 +70,7 @@ export default function Neighborhood() {
         "opens": "00:00",
         "closes": "23:59",
       },
-      "description": `Eletricista profissional atendendo o bairro ${neighborhood.name} em Campinas, com mais de 20 anos de experiência. ${neighborhood.description}`,
+      "description": `Eletricista profissional atendendo o bairro ${neighborhood.name} em Paulínia, com mais de 20 anos de experiência. ${neighborhood.description}`,
     } : undefined,
   });
 
@@ -95,7 +95,7 @@ export default function Neighborhood() {
           <a href="/" className="flex items-center gap-2">
             <img 
               src="/manus-storage/logo_eletricista_280fb94a.png" 
-              alt="Eletricista em Campinas" 
+              alt="Eletricista em Paulínia" 
               className="h-24 w-auto"
             />
           </a>
@@ -120,7 +120,7 @@ export default function Neighborhood() {
             Eletricista em {neighborhood.name}
           </h1>
           <p className="text-lg text-blue-100 mb-8 max-w-2xl">
-            Serviços elétricos profissionais em {neighborhood.name}, Campinas. Atendimento 24 horas com técnicos certificados.
+            Serviços elétricos profissionais em {neighborhood.name}, Paulínia. Atendimento 24 horas com técnicos certificados.
           </p>
           <a 
             href={`https://api.whatsapp.com/send/?phone=5519994252525&text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20em%20${neighborhood.name}`}
@@ -214,7 +214,7 @@ export default function Neighborhood() {
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
-              <h3 className="font-bold mb-4">Eletricista em Campinas</h3>
+              <h3 className="font-bold mb-4">Eletricista em Paulínia</h3>
               <p className="text-blue-200 text-sm">Serviços elétricos profissionais com mais de 20 anos de experiência.</p>
             </div>
             <div>
@@ -226,7 +226,7 @@ export default function Neighborhood() {
             </div>
             <div>
               <h4 className="font-semibold mb-3">Localização</h4>
-              <p className="text-blue-200 text-sm">{neighborhood.name}, Campinas</p>
+              <p className="text-blue-200 text-sm">{neighborhood.name}, Paulínia</p>
               <p className="text-blue-200 text-sm">Atendemos toda a região</p>
             </div>
             <div>
@@ -245,7 +245,7 @@ export default function Neighborhood() {
               <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
               Avalie-nos no Google
             </a>
-            <p>&copy; 2026 Eletricista em Campinas. Todos os direitos reservados.</p>
+            <p>&copy; 2026 Eletricista em Paulínia. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>
