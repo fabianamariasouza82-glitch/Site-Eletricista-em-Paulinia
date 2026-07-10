@@ -6,8 +6,8 @@ import { useSEO } from "@/hooks/useSEO";
 export default function Services() {
   const [menuOpen, setMenuOpen] = useState(false);
   useSEO({
-    title: "Serviços Elétricos em Campinas - Instalação e Manutenção | Eletricista em Campinas",
-    description: "Conheça todos os serviços elétricos que oferecemos em Campinas: instalações, manutenção, quadro elétrico, iluminação, reformas e atendimento emergencial 24h.",
+    title: "Serviços Elétricos em Paulínia - Instalação e Manutenção | Eletricista em Paulínia",
+    description: "Conheça todos os serviços elétricos que oferecemos em Paulínia: instalações, manutenção, quadro elétrico, iluminação, reformas e atendimento emergencial 24h.",
   });
 
   const services = [
@@ -148,7 +148,7 @@ export default function Services() {
           <Link href="/" className="flex items-center gap-2">
             <img 
               src="/manus-storage/logo_eletricista_280fb94a.png" 
-              alt="Eletricista em Campinas" 
+              alt="Eletricista em Paulínia" 
               className="h-24 w-auto"
             />
           </Link>
@@ -192,7 +192,7 @@ export default function Services() {
             Nossos Serviços
           </h1>
           <p className="text-lg text-blue-100 max-w-2xl mx-auto">
-            Oferecemos uma ampla gama de serviços de instalação e manutenção elétrica para residências, comércios e indústrias
+            Oferecemos uma ampla gama de serviços de instalação e manutenção elétrica para residências, comércios e indústrias em Paulínia
           </p>
         </div>
       </section>
@@ -245,7 +245,7 @@ export default function Services() {
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
-              <h3 className="font-bold mb-4">Eletricista em Campinas</h3>
+              <h3 className="font-bold mb-4">Eletricista em Paulínia</h3>
               <p className="text-blue-200 text-sm">Serviços elétricos profissionais com mais de 20 anos de experiência.</p>
             </div>
             <div>
@@ -257,7 +257,7 @@ export default function Services() {
             </div>
             <div>
               <h4 className="font-semibold mb-3">Localização</h4>
-              <p className="text-blue-200 text-sm">Campinas, SP</p>
+              <p className="text-blue-200 text-sm">Paulínia, SP</p>
               <p className="text-blue-200 text-sm">Atendemos toda a região</p>
             </div>
             <div>
@@ -276,7 +276,7 @@ export default function Services() {
               <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
               Avalie-nos no Google
             </a>
-            <p>&copy; 2026 Eletricista em Campinas. Todos os direitos reservados.</p>
+            <p>&copy; 2026 Eletricista em Paulínia. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>
