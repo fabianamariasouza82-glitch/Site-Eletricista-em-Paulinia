@@ -1,706 +1,207 @@
 export const neighborhoods = [
-  { id: "taquaral", name: "Taquaral", description: "Região norte de Campinas com muitas residências e comércios" },
-  { id: "botafogo", name: "Botafogo", description: "Bairro tradicional com grande demanda por serviços elétricos" },
-  { id: "barao-geraldo", name: "Barão Geraldo", description: "Região universitária com muitas residências e apartamentos" },
-  { id: "cambui", name: "Cambuí", description: "Bairro central de Campinas com muitos estabelecimentos comerciais" },
-  { id: "sousas", name: "Sousas", description: "Região leste com muitas casas e propriedades" },
-  { id: "joaquim-egidio", name: "Joaquim Egídio", description: "Distrito histórico na região leste, com muitas chácaras e residências" },
-  { id: "mansoes-santo-antonio", name: "Mansões Santo Antônio", description: "Bairro nobre com residências de alto padrão" },
-  { id: "swiss-park", name: "Swiss Park", description: "Condomínio fechado com infraestrutura moderna" },
-  { id: "parque-prado", name: "Parque Prado", description: "Bairro residencial bem estruturado" },
-  { id: "gramado", name: "Gramado", description: "Região com muitas residências e comércios locais" },
-  { id: "jardim-santa-genebra", name: "Jardim Santa Genebra", description: "Bairro residencial tradicional de Campinas" },
-  { id: "distrito-industrial", name: "Distrito Industrial", description: "Área com muitas indústrias e comércios" },
-  { id: "centro", name: "Centro", description: "Coração comercial de Campinas com muitos estabelecimentos" },
-  { id: "vila-industrial", name: "Vila Industrial", description: "Região industrial com muitas fábricas e comércios" },
-  { id: "vila-brandina", name: "Vila Brandina", description: "Bairro residencial com boa infraestrutura" },
-  { id: "vila-costa-e-silva", name: "Vila Costa e Silva", description: "Bairro popular com muitas residências" },
-  { id: "vila-itapura", name: "Vila Itapura", description: "Região com residências e comércios variados" },
-  { id: "vila-nova", name: "Vila Nova", description: "Bairro tradicional com muitas casas e apartamentos" },
-  { id: "vila-operaria", name: "Vila Operária", description: "Bairro residencial com boa localização" },
-  { id: "vila-padre-anchieta", name: "Vila Padre Anchieta", description: "Região residencial bem desenvolvida" },
-  { id: "vila-soco", name: "Vila Soco", description: "Bairro com muitas residências e comércios locais" },
-  { id: "jardim-chapadao", name: "Jardim Chapadão", description: "Bairro residencial de Campinas" },
-  { id: "jardim-guanabara", name: "Jardim Guanabara", description: "Região residencial com bom comércio local" },
-  { id: "jardim-ipaussurama", name: "Jardim Ipaçurama", description: "Bairro residencial tradicional" },
-  { id: "jardim-nova-europa", name: "Jardim Nova Europa", description: "Região residencial em expansão" },
-  { id: "jardim-santa-monica", name: "Jardim Santa Mônica", description: "Bairro residencial bem localizado" },
-  { id: "loteamento-parque-das-flores", name: "Parque das Flores", description: "Condomínio residencial moderno" },
-  { id: "residencial-dos-lagos", name: "Residencial dos Lagos", description: "Área residencial de luxo" },
-  { id: "alphaville", name: "Alphaville", description: "Condomínio fechado de alto padrão" },
-  { id: "chacara-primavera", name: "Chácara Primavera", description: "Região com propriedades e chácaras" },
-  { id: "nova-campinas", name: "Nova Campinas", description: "Bairro em desenvolvimento com infraestrutura moderna" },
-  { id: "ouro-verde", name: "Ouro Verde", description: "Bairro residencial de Campinas" },
-  { id: "ponte-preta", name: "Ponte Preta", description: "Região com muitas residências" },
-  { id: "royal-park", name: "Royal Park", description: "Condomínio residencial bem estruturado" },
-  { id: "vila-aeroporto", name: "Vila Aeroporto", description: "Região próxima ao aeroporto de Campinas" },
-  { id: "vila-homero-thon", name: "Vila Homero Thon", description: "Bairro residencial tradicional" },
-  { id: "vila-marieta", name: "Vila Marieta", description: "Região residencial de Campinas" },
-  { id: "vila-pinheiros", name: "Vila Pinheiros", description: "Bairro com muitas casas e apartamentos" },
-  { id: "vila-santana", name: "Vila Santana", description: "Bairro residencial bem desenvolvido" },
-  { id: "vila-verde", name: "Vila Verde", description: "Região residencial com bom comércio" },
+  { id: "centro", name: "Centro", description: "Região central de Paulínia, com forte comércio ao longo da Avenida José Paulino" },
+  { id: "betel", name: "Betel", description: "Bairro com vocação empresarial e residencial, próximo a centros de pesquisa" },
+  { id: "parque-brasil-500", name: "Parque Brasil 500", description: "Região nobre e urbanisticamente arrojada, com avenidas largas e fácil acesso ao centro" },
+  { id: "jardim-america", name: "Jardim América", description: "Bairro tradicional e tranquilo, com clima residencial consolidado" },
+  { id: "santa-terezinha", name: "Santa Terezinha", description: "Bairro com fácil acesso ao centro e às principais vias de Paulínia" },
+  { id: "sao-jose", name: "São José", description: "Um dos bairros mais amplos e populosos da cidade, em constante reurbanização" },
+  { id: "nova-paulinia", name: "Nova Paulínia", description: "Bairro em expansão, com novos empreendimentos e comércio de proximidade" },
+  { id: "joao-aranha", name: "João Aranha", description: "Região residencial de configuração urbana simples e funcional" },
+  { id: "bonfim", name: "Bonfim", description: "Bairro na região da Rodovia Zeferino Vaz" },
+  { id: "cascata", name: "Cascata", description: "Região residencial de Paulínia" },
+  { id: "morumbi", name: "Morumbi", description: "Bairro residencial de Paulínia" },
+  { id: "vila-bressani", name: "Vila Bressani", description: "Bairro com oferta de apartamentos e imóveis residenciais" },
+  { id: "jardim-ype", name: "Jardim Ypê", description: "Bairro residencial de Paulínia" },
 ];
 
 export const blogPosts = [
   {
-    id: "disjuntor-desarmando",
-    title: "Disjuntor Desarmando Constantemente",
-    excerpt: "Entenda as principais razões pelas quais seu disjuntor desarma constantemente e como resolver esse problema.",
-    content: `Seu disjuntor fica desarmando constantemente? Isso é um sinal de alerta que não deve ser ignorado. Veja o que pode estar acontecendo:
-    
-**Possíveis causas:**
+    id: "instalacao-eletrica-condominios-paulinia",
+    title: "Instalação Elétrica em Condomínios Fechados de Paulínia",
+    excerpt: "Veja os cuidados específicos que condomínios em bairros como Parque Brasil 500 e Betel precisam ter com a instalação elétrica.",
+    content: `Paulínia tem uma quantidade crescente de condomínios fechados, especialmente em regiões como Parque Brasil 500, Betel e Santa Terezinha. Esses empreendimentos têm particularidades elétricas que vale a pena conhecer.
 
-**Sobrecarga de Circuito** - Você conectou muitos aparelhos potentes no mesmo circuito? O disjuntor está fazendo seu trabalho de proteção.
+**Áreas comuns exigem atenção redobrada**
 
-**Curto-Circuito** - Isso é perigoso! Pode causar incêndios e choques elétricos. Requer atendimento IMEDIATO de um profissional.
+Diferente de uma casa isolada, um condomínio tem áreas de uso compartilhado — portaria, salão de festas, garagem, playground, iluminação externa — que dependem de uma instalação elétrica bem dimensionada e de manutenção preventiva regular, já que o uso é mais intenso e constante.
 
-**Fuga de Corrente** - Umidade ou fios danificados podem estar causando vazamento de energia. Isso é um risco de segurança.
+**Pontos que costumam gerar chamados em condomínios:**
 
-**Disjuntor Defeituoso** - O próprio disjuntor pode estar com defeito e precisar de troca.
+- Iluminação externa com sensores de presença que param de funcionar
+- Quadros de comando de portões e interfones
+- Tomadas de áreas comuns sobrecarregadas em eventos
+- Sistemas de segurança (câmeras, cerca elétrica) mal integrados à instalação
 
-**O que você deve fazer:**
-- Não tente consertar sozinho
-- Não ignore o problema
-- Chame um eletricista profissional IMEDIATAMENTE
-- Ele vai diagnosticar e resolver com segurança
+**Quem decide sobre manutenção elétrica em condomínio**
 
-Não arrisque a segurança da sua família. Esse é um problema que requer profissional certificado!`,
-    date: "2026-06-28",
-    category: "Manutenção",
+Normalmente é o síndico quem aciona o serviço, muitas vezes após reclamações de moradores. O ideal é não esperar o problema aparecer: um contrato de manutenção preventiva programada evita que a administração precise lidar com emergências recorrentes e ainda facilita a prestação de contas em assembleia.
+
+**Antes de contratar**
+
+Verifique se o profissional tem certificação NR10 e oferece nota fiscal — documentos que costumam ser exigidos pela administradora do condomínio.
+
+Se você mora ou administra um condomínio em Paulínia, vale fazer uma avaliação da instalação das áreas comuns antes que um problema pontual vire uma dor de cabeça maior.`,
+    date: "2026-07-05",
+    category: "Condomínios",
   },
   {
-    id: "resistencia-chuveiro-queimando",
-    title: "Resistência do Chuveiro Queimada",
-    excerpt: "Saiba como identificar quando a resistência do chuveiro está queimada e como fazer a substituição com segurança.",
-    content: `Seu chuveiro parou de aquecer? A resistência pode estar queimada. Veja como identificar:
-    
-**Sinais de que a resistência está queimada:**
-- Chuveiro não aquece a água
-- Chuveiro liga mas não funciona
-- Odor de queimado vindo do chuveiro
-- Barulhos estranhos
+    id: "cuidados-eletricos-empresas-regiao-industrial-paulinia",
+    title: "Cuidados Elétricos para Empresas na Região Industrial de Paulínia",
+    excerpt: "Empresas próximas ao polo industrial de Paulínia têm exigências elétricas diferentes de um comércio comum. Entenda quais.",
+    content: `Paulínia é conhecida pelo seu polo industrial e petroquímico, e isso molda o perfil das empresas que atuam na cidade — inclusive as exigências elétricas que elas precisam atender.
 
-**Riscos:**
-- Choque elétrico se tentar consertar
-- Danos ao equipamento
-- Incêndio se a resistência estiver muito danificada
+**Por que empresas nessa região têm necessidades diferentes**
 
-**O que fazer:**
-- Desligue o disjuntor do chuveiro (não use)
-- Chame um eletricista profissional
-- Ele vai trocar a resistência com segurança
-- Não tente consertar sozinho (risco de choque)
+Negócios que atendem ou estão próximos à cadeia industrial da cidade costumam operar com equipamentos de maior potência, jornadas mais longas de funcionamento e, em muitos casos, exigências de fornecedores ou clientes quanto à conformidade das próprias instalações elétricas.
 
-Um profissional resolve isso rapidamente e com segurança!`,
-    date: "2026-06-25",
-    category: "Chuveiro",
+**Pontos de atenção para empresas da região:**
+
+- Quadros elétricos dimensionados para a demanda real, não só para o uso básico de escritório
+- Aterramento correto, essencial para proteger equipamentos sensíveis
+- Sistemas de energia de emergência (nobreak, gerador) para operações que não podem parar
+- Documentação técnica organizada, já que auditorias de segurança são mais comuns nesse tipo de empresa
+
+**Manutenção preventiva como parte da operação**
+
+Empresas que dependem de eletricidade para funcionar de forma contínua se beneficiam de um plano de manutenção preventiva, em vez de esperar uma falha corretiva — especialmente em uma cidade onde o tecido empresarial tem esse perfil mais industrial.
+
+**Documentação exigida**
+
+Se sua empresa está nessa região, vale verificar se a instalação elétrica tem laudo técnico atualizado — documento frequentemente solicitado em processos de auditoria, seguro empresarial ou parcerias comerciais.
+
+Empresas com esse perfil de operação merecem uma avaliação elétrica específica para o seu caso, não um serviço genérico de manutenção residencial.`,
+    date: "2026-07-03",
+    category: "Empresas",
   },
   {
-    id: "curto-circuito",
-    title: "Curto-Circuito na Instalação Elétrica",
-    excerpt: "Entenda o que é um curto-circuito, seus riscos e como prevenir esse problema em sua instalação elétrica.",
-    content: `Seu disjuntor desarmou de repente? Viu faíscas? Sentiu cheiro de queimado? Pode ser um curto-circuito - uma emergência elétrica!
-    
-**Sinais de curto-circuito:**
-- Fios desencapados tocando um no outro
-- Umidade na instalação
-- Equipamentos queimando
-- Faíscas visíveis
-- Cheiro de queimado
+    id: "iluminacao-externa-jardim-seguranca",
+    title: "Iluminação Externa e de Jardim: Como Instalar com Segurança",
+    excerpt: "Spots de jardim, refletores e iluminação de fachada precisam de cuidados elétricos específicos por ficarem expostos ao tempo.",
+    content: `Iluminação externa valoriza a fachada e melhora a segurança da casa, mas tem exigências elétricas diferentes da iluminação interna — porque fica exposta a chuva, umidade e variação de temperatura o ano todo.
 
-**Riscos:**
-- Incêndios
-- Choque elétrico
-- Danos aos equipamentos
-- Perda total de energia
+**Por que a instalação externa é diferente**
 
-**AÇÃO IMEDIATA:**
-1. Desligue o disjuntor geral
-2. Não toque em fios ou equipamentos
-3. Chame um eletricista AGORA
-4. Não ligue nada até resolver
+Pontos de luz ao ar livre precisam de proteção específica contra água (grau de proteção IP adequado), fiação própria para uso externo e, idealmente, um circuito independente com proteção dedicada — não é recomendado simplesmente estender a fiação interna para fora de casa.
 
-Isso é uma emergência! Não espere. Chame um profissional imediatamente!`,
-    date: "2026-06-20",
-    category: "Segurança",
-  },
-  {
-    id: "instalacao-tomada-eletrica",
-    title: "Falta de Tomadas em Casa",
-    excerpt: "Passo a passo para instalar uma tomada elétrica nova em sua casa, seguindo as normas de segurança.",
-    content: `Precisa de uma tomada nova em sua casa? Falta de tomadas é um problema comum em casas antigas.
-    
-**Por que contratar um profissional:**
-- Garante segurança (risco de choque)
-- Respeita as normas de segurança
-- Usa fios de bitola correta
-- Oferece garantia do trabalho
-- Termina rápido e bem feito
+**Erros comuns em instalações externas malfeitas:**
 
-**Riscos de fazer sozinho:**
-- Choque elétrico
-- Fio com bitola errada (risco de incêndio)
-- Não respeita normas
-- Sem garantia
-- Pode danificar a instalação
+- Fios expostos sem proteção adequada contra chuva
+- Conexões emendadas sem isolamento correto, ficando expostas à umidade
+- Iluminação de jardim ligada ao mesmo circuito de tomadas internas, causando sobrecarga
+- Ausência de disjuntor DR nesse circuito, aumentando o risco de choque em área externa
 
-**Solução:**
-Chame um eletricista profissional. Ele instala com segurança e rapidez. O custo é baixo comparado aos riscos!`,
-    date: "2026-06-15",
-    category: "Instalação",
-  },
-  {
-    id: "quanto-custa-eletricista",
-    title: "Quanto Custa um Eletricista em Campinas? Preços e Tabelas 2026",
-    excerpt: "Conheça os preços médios de serviços de eletricista em Campinas e como calcular o orçamento.",
-    content: `Está com dúvida sobre quanto custa chamar um eletricista? Veja os preços médios em Campinas:
-    
-**Serviços Simples:**
-- Troca de tomada: R$ 80 a R$ 150
-- Troca de interruptor: R$ 80 a R$ 150
-- Troca de lâmpada/spot: R$ 50 a R$ 100
+**Opções que valem considerar:**
 
-**Serviços Intermediários:**
-- Instalação de chuveiro: R$ 200 a R$ 400
-- Troca de disjuntor: R$ 150 a R$ 300
-- Instalação de tomada nova: R$ 150 a R$ 250
+- Sensores de presença, que acendem automaticamente e economizam energia
+- Iluminação em LED, que gera menos calor e tem maior durabilidade em uso externo
+- Refletores para fachada, com instalação que considere o ângulo e a distância certos
 
-**Serviços Complexos:**
-- Reforma elétrica completa: R$ 3.000 a R$ 10.000+
-- Ampliação de circuitos: R$ 500 a R$ 1.500
-- Projeto elétrico: R$ 1.000 a R$ 5.000
+**Quando chamar um profissional**
 
-**Fatores que influenciam o preço:**
-- Complexidade do trabalho
-- Localização do imóvel
-- Urgência do atendimento
-- Materiais necessários
-- Tempo de execução
+Qualquer instalação elétrica externa deve ser feita por um eletricista, já que o risco de choque aumenta em ambientes com umidade. Além disso, um profissional garante que o circuito tenha a proteção correta (DR) para essa aplicação específica.
 
-**Dica importante:**
-- Sempre peça orçamento ANTES de contratar
-- Compare preços de 2-3 profissionais
-- Desconfie de preços muito baixos
-- Priorize profissionais certificados
-- Solicite garantia do trabalho
-
-Não deixe de chamar um profissional por medo do preço. O custo é justo pela segurança que você ganha!`,
-    date: "2026-07-01",
-    category: "Orçamento",
-  },
-  {
-    id: "tomada-queimada",
-    title: "Tomada Queimada ou com Marcas Pretas",
-    excerpt: "Descubra por que as tomadas queimam e como identificar esse problema antes que cause danos maiores.",
-    content: `Viu uma tomada queimada ou com marcas pretas? Isso é um sinal de PERIGO que não pode ser ignorado!
-    
-**Por que as tomadas queimam:**
-- Sobrecarga de aparelhos
-- Curto-circuito interno
-- Umidade ou infiltração
-- Envelhecimento da tomada
-- Contato solto ou corrosão
-
-**Sinais de alerta:**
-- Odor de queimado
-- Descoloração ou marcas pretas
-- Faíscas ao conectar aparelhos
-- Aquecimento excessivo
-- Aparelhos desligando sozinhos
-
-**RISCO DE INCÊNDIO E CHOQUE:**
-Uma tomada queimada pode causar incêndios ou choques elétricos graves!
-
-**O que você deve fazer AGORA:**
-1. PARE de usar essa tomada
-2. Desligue o disjuntor dela
-3. Não toque nela
-4. Chame um eletricista profissional HOJE
-5. Não use outras tomadas próximas até resolver
-
-Não ignore! Chame um profissional imediatamente!`,
+Se você está planejando reformar o jardim ou a fachada da sua casa, vale já incluir a parte elétrica no planejamento, em vez de improvisar depois.`,
     date: "2026-06-30",
-    category: "Segurança",
+    category: "Instalação",
   },
   {
-    id: "chuveiro-nao-aquece",
-    title: "Chuveiro Não Aquece: Diagnóstico e Soluções Práticas",
-    excerpt: "Saiba por que seu chuveiro parou de aquecer e as melhores soluções para resolver o problema.",
-    content: `Seu chuveiro parou de aquecer? Veja o que pode estar acontecendo:
-    
-**Possíveis problemas:**
-- Resistência queimada
-- Disjuntor desarmado
-- Fios soltos ou danificados
-- Entupimento de calcário
-- Chave seletora com defeito
+    id: "portao-eletronico-interfone-manutencao",
+    title: "Portão Eletrônico e Interfone: Instalação e Manutenção Elétrica",
+    excerpt: "Portões automáticos e interfones dependem de uma instalação elétrica bem feita para funcionar sem falhas. Veja o que observar.",
+    content: `Portão eletrônico parado é um dos incômodos mais comuns em casas e condomínios — e na maioria das vezes, a causa é elétrica, não mecânica.
 
-**Você pode tentar:**
-- Verificar se o disjuntor está ligado (simples)
-- Limpar o chuveiro com vinagre (calcário)
+**Onde costuma estar o problema**
 
-**Quando chamar um profissional:**
-- Se o disjuntor continua desarmando
-- Se há cheiro de queimado
-- Se há faíscas
-- Se nada funcionar
-- Se há risco de choque
+Antes de suspeitar do motor do portão, vale verificar a parte elétrica: disjuntor desarmado, fiação danificada por roedores ou intempéries, ou a placa de comando com problema de alimentação são causas frequentes de portão que "parou do nada".
 
-**Recomendação:**
-Para a maioria dos casos, é melhor chamar um profissional. Ele diagnostica e resolve com segurança. Não vale arriscar!`,
-    date: "2026-06-29",
-    category: "Chuveiro",
-  },
-  {
-    id: "reforma-eletrica-residencial",
-    title: "Problemas Elétricos Frequentes em Casa",
-    excerpt: "Tudo o que você precisa saber sobre reforma elétrica em casa, desde planejamento até execução.",
-    content: `Sua casa está com problemas elétricos frequentes? Pode ser hora de uma reforma elétrica. Veja os sinais:
-    
-**Sinais de que sua casa precisa de reforma:**
-- Casa com mais de 20 anos
-- Disjuntor desarmando frequentemente
-- Falta de tomadas
-- Fiação antiga ou danificada
-- Antes de reformas estruturais
+**Sinais de que o problema é elétrico, não mecânico:**
 
-**Por que fazer uma reforma:**
-- Aumenta a segurança
-- Reduz riscos de incêndio
-- Melhora o conforto
-- Aumenta o valor do imóvel
-- Reduz consumo de energia
+- Portão não reage a nenhum comando (controle ou botoeira)
+- LED da central de comando apagado
+- Interfone mudo, mesmo com o portão funcionando
+- Disjuntor específico do portão desarmando sozinho
 
-**O que você deve fazer:**
-1. Chame um eletricista profissional
-2. Solicite um diagnóstico completo
-3. Peça um orçamento detalhado
-4. Verifique se tem NR10 e CREA
-5. Solicite ART (Anotação de Responsabilidade)
+**Interfone e videoporteiro**
 
-**Não tente fazer sozinho:**
-- Contrate profissional certificado (NR10)
-- Requer conhecimento técnico
-- Risco de acidentes graves
-- Precisa respeitar normas
+Sistemas de interfone, especialmente os mais modernos com vídeo, dependem de uma alimentação elétrica estável. Oscilações de energia podem causar reinicializações constantes ou perda de configuração do aparelho.
 
-Uma reforma elétrica é um investimento importante na segurança da sua família!`,
+**Cuidados de manutenção:**
+
+- Verificar periodicamente se a fiação externa está protegida contra umidade
+- Não sobrecarregar o circuito do portão com outros equipamentos
+- Garantir que a instalação tenha aterramento adequado, protegendo a placa eletrônica contra surtos
+
+**Quando chamar um eletricista**
+
+Se o motor do portão gira normalmente quando testado manualmente, mas o sistema elétrico não responde, o problema provavelmente está na parte elétrica — e não na parte mecânica do portão, que geralmente é atendida por outro tipo de profissional.
+
+Um diagnóstico correto evita trocar peças desnecessárias quando o problema real é elétrico.`,
     date: "2026-06-27",
-    category: "Reforma",
+    category: "Instalação",
   },
   {
-    id: "dr-disjuntor-diferencial",
-    title: "DR (Disjuntor Diferencial): O Que É e Por Que Você Precisa",
-    excerpt: "Entenda a importância do DR para proteger sua casa contra choques elétricos e vazamentos de corrente.",
-    content: `Você sabe o que é um DR? É um dispositivo que pode SALVAR SUA VIDA! Veja por quê:
-    
-**O que é o DR:**
-O DR detecta vazamentos de corrente para o terra e desliga o circuito automaticamente, prevenindo choques elétricos.
+    id: "rede-eletrica-epoca-chuvas-cuidados",
+    title: "Rede Elétrica em Época de Chuvas: Cuidados Essenciais",
+    excerpt: "Chuvas fortes aumentam o risco de problemas elétricos em casa. Saiba quais cuidados tomar antes e durante o período chuvoso.",
+    content: `Períodos de chuva mais intensa trazem consigo um aumento real nos chamados elétricos — infiltrações, oscilações de energia e até curtos-circuitos se tornam mais comuns.
 
-**Por que você precisa de um DR:**
-- Protege contra choques elétricos
-- Detecta problemas na instalação
-- Previne incêndios
-- É obrigatório por lei em novas instalações
+**Por que a chuva afeta a instalação elétrica**
 
-**Diferença importante:**
-- Disjuntor: protege contra sobrecarga e curto-circuito
-- DR: protege contra vazamento de corrente (choque)
-- Você precisa dos DOIS!
+Água e eletricidade não se misturam bem: infiltrações em quadros externos, caixas de passagem mal vedadas ou fiação exposta podem permitir a entrada de umidade, aumentando o risco de curto-circuito e de choque elétrico.
 
-**Se sua casa não tem DR:**
-- Está em risco de choque elétrico
-- Não está protegida adequadamente
-- Chame um eletricista para instalar
+**Cuidados preventivos antes do período de chuvas:**
 
-**Teste seu DR:**
-- Aperte o botão de teste mensalmente
-- Deve desligar a energia
-- Se não funcionar, chame um profissional
+- Verificar se quadros elétricos externos estão bem vedados
+- Checar se há infiltrações próximas a tomadas ou interruptores
+- Confirmar que o telhado não tem vazamentos próximos à fiação
+- Testar o funcionamento do disjuntor DR, que é a principal proteção contra choque em situações de umidade
 
-Sua vida pode depender de um DR funcionando! Verifique o seu hoje!`,
-    date: "2026-06-26",
-    category: "Segurança",
-  },
-  {
-    id: "iluminacao-led-economia",
-    title: "Conta de Luz Muito Alta",
-    excerpt: "Descubra como trocar para LED pode reduzir drasticamente seu consumo de energia elétrica.",
-    content: `Sua conta de luz está muito alta? Trocar para LED pode economizar MUITO dinheiro. Veja como:
-    
-**Economia de energia:**
-- LED consome 80% menos que incandescente
-- LED consome 50% menos que fluorescente
-- Durabilidade de até 50.000 horas
+**Durante temporais e quedas de energia:**
 
-**Benefícios de trocar para LED:**
-- Menor consumo de energia
-- Maior durabilidade
-- Melhor qualidade de luz
-- Sem mercúrio (mais seguro)
-- Várias cores e intensidades
-- Acende instantaneamente
+- Evite tocar em equipamentos elétricos com as mãos molhadas
+- Se notar infiltração próxima a um ponto elétrico, desligue o disjuntor daquele circuito
+- Em caso de queda de energia por raio ou temporal, aguarde a normalização antes de religar equipamentos sensíveis, evitando danos por possíveis picos de tensão no retorno
 
-**Cálculo de economia:**
-Uma lâmpada incandescente de 60W custa R$ 10/mês em energia.
-Uma lâmpada LED de 8W custa apenas R$ 1,30/mês.
-Economia: R$ 8,70 por lâmpada/mês!
+**Sinais de que a chuva já afetou sua instalação:**
 
-**Como contratar:**
-- Chame um eletricista profissional
-- Ele escolhe o LED certo para cada ambiente
-- Instala com segurança
-- Garante o funcionamento
+- Disjuntor desarmando durante ou logo após a chuva
+- Cheiro de queimado após período úmido
+- Tomadas ou interruptores com sinais de umidade
 
-Comece a economizar HOJE! Chame um profissional para trocar suas lâmpadas!`,
+Se sua casa apresentar qualquer um desses sinais depois de um temporal, vale uma avaliação elétrica antes que o problema se repita na próxima chuva.`,
     date: "2026-06-24",
-    category: "Economia",
-  },
-  {
-    id: "aterramento-eletrico",
-    title: "Casa Sem Aterramento Elétrico",
-    excerpt: "Saiba por que o aterramento é fundamental para a segurança da sua instalação elétrica.",
-    content: `Sua casa tem aterramento? Muitas casas antigas não têm, e isso é um RISCO! Veja por quê:
-    
-**O que é aterramento:**
-O aterramento é uma conexão direta entre a instalação elétrica e o solo, permitindo que correntes de fuga sejam dissipadas com segurança.
-
-**Por que você precisa:**
-- Protege contra choques elétricos
-- Protege equipamentos contra surtos
-- Melhora a qualidade da energia
-- Reduz interferências eletromagnéticas
-- É obrigatório em novas instalações
-
-**Sinais de que você precisa de aterramento:**
-- Casa com mais de 20 anos
-- Tomadas com apenas 2 furos
-- Equipamentos queimando frequentemente
-- Choque ao tocar em metais
-
-**O que fazer:**
-1. Chame um eletricista profissional
-2. Ele vai verificar se sua casa tem aterramento
-3. Se não tiver, ele instala
-4. Aumenta muito a segurança
-
-Não deixe sua família em risco! Verifique o aterramento da sua casa!`,
-    date: "2026-06-23",
     category: "Segurança",
   },
   {
-    id: "ventilador-de-teto",
-    title: "Ventilador de Teto Não Funciona",
-    excerpt: "Guia completo sobre instalação e manutenção de ventilador de teto para melhor conforto.",
-    content: `Quer instalar um ventilador de teto? Veja por que contratar um profissional:
-    
-**Benefícios do ventilador:**
-- Circula o ar da casa
-- Reduz o uso de ar condicionado
-- Consome pouca energia
-- Melhora o conforto térmico
+    id: "quadro-disjuntores-desatualizado-modernizar",
+    title: "Quadro de Disjuntores Desatualizado: Quando Modernizar",
+    excerpt: "Quadros elétricos antigos nem sempre dão sinais óbvios de problema. Veja como saber se está na hora de atualizar o seu.",
+    content: `Diferente de um vazamento ou uma rachadura, um quadro de disjuntores desatualizado nem sempre avisa que está com problema — muitas vezes ele continua "funcionando", só que operando fora do ideal em termos de segurança.
 
-**Por que contratar um profissional:**
-- Garante segurança (risco de choque)
-- Instala corretamente no teto
-- Faz as conexões elétricas adequadas
-- Oferece garantia
-- Termina rápido
+**Por que quadros antigos ficam desatualizados**
 
-**Riscos de fazer sozinho:**
-- Queda do ventilador
-- Choque elétrico
-- Conexões erradas
-- Danos ao equipamento
+Ao longo dos anos, é comum que uma casa ganhe novos equipamentos — ar-condicionado, chuveiro mais potente, forno elétrico — sem que o quadro original seja revisado para suportar essa nova demanda. O resultado é um quadro operando no limite, mesmo sem sintomas visíveis no dia a dia.
 
-**Manutenção:**
-- Limpe as pás mensalmente
-- Verifique se está bem fixo
-- Lubrife o motor (se necessário)
-- Teste a velocidade
+**Sinais de que vale a pena avaliar a modernização:**
 
-**Chame um profissional:**
-Não vale arriscar sua segurança. Um eletricista instala com segurança e rapidez!`,
-    date: "2026-06-22",
-    category: "Instalação",
-  },
-  {
-    id: "ar-condicionado-instalacao",
-    title: "Ar Condicionado Não Funciona ou Não Esfria",
-    excerpt: "Guia completo sobre como instalar ar condicionado de forma segura e eficiente.",
-    content: `Quer instalar um ar condicionado? Isso requer um profissional especializado. Veja por quê:
-    
-**Por que não fazer sozinho:**
-- Requer conhecimento técnico
-- Precisa de ferramentas especiais
-- Risco de choque elétrico
-- Pode danificar o equipamento
-- Perde a garantia
+- Quadro sem disjuntor DR (item hoje considerado padrão de segurança)
+- Componentes visivelmente antigos, com sinais de oxidação
+- Casa com mais de 15-20 anos sem qualquer revisão elétrica
+- Adição recente de equipamentos de maior potência sem reavaliação do quadro
 
-**O que um profissional faz:**
-- Escolhe o local ideal
-- Verifica a capacidade elétrica
-- Instala com segurança
-- Faz todas as conexões corretas
-- Testa o funcionamento
-- Oferece garantia
+**O que uma modernização costuma incluir:**
 
-**Requisitos elétricos:**
-- Disjuntor específico (mínimo 32A)
-- Fio apropriado (mínimo 4mm²)
-- DR de proteção
-- Tomada dedicada
+- Levantamento da demanda elétrica real da casa
+- Substituição de disjuntores antigos por modelos atuais
+- Instalação de DR, se ainda não existir
+- Organização física do quadro, facilitando futuras manutenções
 
-**Manutenção:**
-- Limpe o filtro regularmente
-- Faça limpeza profissional anualmente
+**Não é preciso esperar um problema aparecer**
 
-**Contrate um profissional certificado:**
-Isso garante segurança, eficiência e garantia do equipamento!`,
+Diferente de uma emergência (como um curto-circuito), a modernização de quadro é um serviço preventivo — o objetivo é justamente evitar que uma falha aconteça, não reagir depois que já aconteceu.
+
+Se sua casa em Paulínia tem um quadro de disjuntores com mais de 15 anos e nunca passou por avaliação, esse é um bom momento para verificar se ele ainda atende à demanda real da sua família.`,
     date: "2026-06-21",
-    category: "Instalação",
-  },
-  {
-    id: "energia-solar-residencial",
-    title: "Conta de Luz Muito Alta - Energia Solar",
-    excerpt: "Descubra se instalar painéis solares em sua casa é um bom investimento e como funciona.",
-    content: `Está cansado de contas de luz altas? Energia solar pode ser a solução! Veja se vale a pena:
-    
-**Vantagens:**
-- Reduz a conta de luz em até 90%
-- Investimento que se paga em 5-8 anos
-- Aumenta o valor do imóvel
-- Energia limpa e renovável
-- Manutenção mínima
-
-**Desvantagens:**
-- Investimento inicial alto (R$ 15.000 a R$ 50.000)
-- Depende de clima e localização
-- Requer espaço no telhado
-- Necessita de vistoria estrutural
-
-**Como funciona (resumido):**
-- Painéis geram energia do sol
-- Inversor converte para usar em casa
-- Você economiza na conta de luz
-- Excedente gera crédito
-
-**O que você deve fazer:**
-1. Chame uma empresa especializada
-2. Solicite uma análise completa
-3. Peça um orçamento
-4. Verifique as opções de financiamento
-5. Decida se vale a pena para você
-
-**Incentivos disponíveis:**
-- Financiamento disponível
-- Redução de impostos
-- Programa de crédito
-
-Consulte um especialista para saber se é viável em sua casa!`,
-    date: "2026-06-19",
-    category: "Inovação",
-  },
-  {
-    id: "interruptor-queimado",
-    title: "Interruptor Queimado ou Não Funciona",
-    excerpt: "Saiba reconhecer um interruptor com defeito e como fazer a troca de forma segura.",
-    content: `Seu interruptor não funciona mais? Pode estar queimado. Veja os sinais:
-    
-**Sinais de que está queimado:**
-- Não acende/apaga as luzes
-- Odor de queimado
-- Descoloração ou marcas pretas
-- Barulhos ao ligar/desligar
-- Aquecimento excessivo
-
-**Por que queima:**
-- Sobrecarga de corrente
-- Umidade ou infiltração
-- Envelhecimento
-- Defeito de fabricação
-- Mau contato
-
-**Risco:**
-- Choque elétrico se tentar consertar
-- Incêndio se estiver muito danificado
-- Não use o interruptor
-
-**O que fazer:**
-1. Pare de usar o interruptor
-2. Chame um eletricista profissional
-3. Ele troca com segurança
-4. Rápido e barato
-
-Não tente consertar! Chame um profissional!`,
-    date: "2026-06-18",
     category: "Manutenção",
-  },
-  {
-    id: "falta-de-tomadas",
-    title: "Preciso de Mais Tomadas em Casa",
-    excerpt: "Descubra as melhores formas de adicionar mais tomadas à sua casa sem comprometer a segurança.",
-    content: `Sua casa não tem tomadas suficientes? Veja as soluções:
-    
-**Soluções TEMPORÁRIAS (não recomendadas):**
-- Extensão com proteção
-- Filtro de energia com proteção
-- Benjamim com proteção (NÃO recomendado)
-
-**Solução PERMANENTE (recomendada):**
-- Instalar novas tomadas
-- Adicionar novos circuitos
-- Aumentar a potência
-
-**Por que não usar extensões:**
-- Risco de incêndio
-- Sobrecarga de circuitos
-- Risco de choque
-- Não é seguro a longo prazo
-
-**O que fazer:**
-1. Chame um eletricista profissional
-2. Ele instala novas tomadas com segurança
-3. Respeita as normas
-4. Oferece garantia
-5. Custo é baixo
-
-**Não arrisque!**
-Chame um profissional para adicionar tomadas com segurança!`,
-    date: "2026-06-17",
-    category: "Instalação",
-  },
-  {
-    id: "manutencao-preventiva",
-    title: "Problemas Elétricos Recorrentes",
-    excerpt: "Saiba por que fazer manutenção preventiva em sua instalação elétrica economiza dinheiro e aumenta a segurança.",
-    content: `Quer evitar problemas elétricos? Manutenção preventiva é a solução! Veja por quê:
-    
-**Por que fazer:**
-- Evita acidentes
-- Reduz custos com reparos
-- Aumenta a vida útil dos equipamentos
-- Melhora a eficiência energética
-- Garante conformidade com normas
-
-**Sinais de que sua casa precisa de manutenção:**
-- Inspecionar a fiação
-- Testar os disjuntores
-- Testar o DR
-- Verificar o aterramento
-- Limpar as tomadas
-- Verificar os fios soltos
-- Inspecionar o quadro de força
-
-**Frequência recomendada:**
-- Teste de DR: mensal (você mesmo)
-- Inspeção profissional: a cada 2 anos
-
-**Sinais de alerta:**
-- Disjuntor desarmando
-- Cheiro de queimado
-- Tomadas aquecendo
-- Luzes piscando
-- Faíscas
-
-**O que fazer:**
-1. Teste o DR mensalmente
-2. Se algum sinal de alerta aparecer, chame um profissional
-3. Faça inspeção profissional a cada 2 anos
-
-Manutenção preventiva economiza dinheiro e aumenta a segurança!`,
-    date: "2026-06-16",
-    category: "Manutenção",
-  },
-  {
-    id: "normas-seguranca-eletrica",
-    title: "Segurança da Instalação Elétrica",
-    excerpt: "Entenda as principais normas de segurança elétrica que protegem você e sua família.",
-    content: `Você sabe por que existem normas de segurança elétrica? Para PROTEGER SUA VIDA! Veja as principais:
-    
-**NR10 - Norma de Segurança:**
-- Obrigatória para profissionais
-- Define procedimentos de segurança
-- Exige treinamento específico
-- Aplica-se a qualquer voltagem
-
-**NBR 5410 - Norma de Instalação:**
-- Define padrões de instalação
-- Especifica materiais e métodos
-- Obrigatória em novas instalações
-- Garante segurança e eficiência
-
-**O que essas normas exigem:**
-- Disjuntores de proteção
-- DR (Disjuntor Diferencial)
-- Aterramento adequado
-- Fios com bitola correta
-- Proteção contra sobrecarga
-- Proteção contra curto-circuito
-
-**Por que você deve exigir que as normas sejam respeitadas:**
-- Evita acidentes
-- Protege o imóvel
-- Facilita venda/aluguel
-- Reduz seguros
-- Garante conformidade legal
-
-**Ao contratar um eletricista:**
-- Verifique se tem NR10
-- Solicite ART (Anotação de Responsabilidade Técnica)
-- Exija respeito às normas NBR
-- Não contrate amadores
-
-Sua segurança depende de normas sendo respeitadas!`,
-    date: "2026-06-14",
-    category: "Segurança",
-  },
-  {
-    id: "eletricista-certificado",
-    title: "Como Escolher um Eletricista de Confiança",
-    excerpt: "Descubra por que é importante contratar apenas profissionais certificados e qualificados.",
-    content: `Está pensando em contratar um eletricista? SEMPRE escolha um certificado! Veja por quê:
-    
-**Vantagens de contratar certificado:**
-- Conhecimento técnico comprovado
-- Segue as normas de segurança
-- Oferece garantia do trabalho
-- Tem responsabilidade legal
-- Usa materiais de qualidade
-- Trabalho mais rápido e eficiente
-
-**Certificações que você deve exigir:**
-- NR10: Segurança em eletricidade
-- NR35: Trabalho em altura
-- Registro na CREA
-- Cursos de especialização
-
-**Riscos de contratar amador (não certificado):**
-- Trabalho inseguro
-- Não segue normas
-- Sem garantia
-- Pode danificar equipamentos
-- Risco de incêndio ou choque
-- Sem responsabilidade legal
-- Pode causar acidentes graves
-
-**Como verificar se é certificado:**
-- Peça certificados
-- Verifique no CREA
-- Solicite referências
-- Peça ART (Anotação de Responsabilidade)
-- Verifique avaliações
-
-**Perguntas OBRIGATÓRIAS a fazer:**
-- Tem NR10?
-- Tem registro na CREA?
-- Oferece garantia?
-- Vai emitir ART?
-- Qual é a experiência?
-
-**Conclusão:**
-Não economize com segurança! Sempre contrate um profissional certificado!`,
-    date: "2026-06-13",
-    category: "Profissional",
   },
 ];
