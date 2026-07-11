@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://eletricistaemcampinas.com.br/sitemap.xml
+Sitemap: https://www.eletricistaempaulinia.com.br/sitemap.xml
