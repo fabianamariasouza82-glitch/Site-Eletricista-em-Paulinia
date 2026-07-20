@@ -5,7 +5,7 @@ import { Phone, MapPin, Clock, CheckCircle, Zap, Shield, AlertCircle, Menu, X, P
 import { Link } from "wouter";
 import { neighborhoods, blogPosts } from "@/lib/data";
 import { useSEO } from "@/hooks/useSEO";
-import TrustindexWidget from "@/components/TrustindexWidget";
+import ElfsightWidget from "@/components/ElfsightWidget";
 
 const faqs = [
   {
@@ -415,7 +415,9 @@ export default function Home() {
           <div className="border-t border-blue-800 pt-8 flex flex-col items-center gap-6 text-center text-blue-200 text-sm">
             <div className="w-full max-w-5xl mx-auto">
               <h3 className="text-xl font-bold text-white mb-6">O que nossos clientes dizem</h3>
-              <TrustindexWidget />
+              <div className="bg-white rounded-xl p-6 md:p-8">
+                <ElfsightWidget />
+              </div>
             </div>
             <a
               href="https://g.page/r/CR9hqmiONmcMEBM/review"
